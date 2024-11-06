@@ -5,10 +5,11 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Giovanni", "Alessandra"];
 
 // Dichiara la funzione qui.
 function iniziali (nomi){
-    const iniziali =[];
+    const firstLetter =[];
     for(let i = 0; i<= nomi.length; i++){
         let curName = nomi[i];
-        iniziali[i]= curName[0];
+        curName = curName.split('');
+        firstLetter.push(curName[0]);
     }
     return iniziali
 }
