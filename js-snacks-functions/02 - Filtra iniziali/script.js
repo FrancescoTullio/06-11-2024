@@ -6,11 +6,10 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Laura", "Alessandra"];
 // Dichiara la funzione qui.
 function startWhit (nomi, lettera){
     const result = [];
-    const upperLetter = lettera.upperletter;
+    const upperLetter = lettera;
     for (i = 0; i < nomi.length; i++){
         const currName = nomi[i];
-        const arrayName = currName.split('');
-        if(arrayName[0] === upperLetter){
+        if(currName[0] === upperLetter){
             result.push(currName);
         }
     }
